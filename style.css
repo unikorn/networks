@@ -1,0 +1,287 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+	
+h1 {
+    font-weight: bold;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#fff;
+}
+
+.section{
+	text-align: center;
+}
+
+	/*
+	.controlArrow.prev {
+		left: 50px;
+	}
+	.controlArrow.next{
+		right: 50px;
+	}*/
+
+
+body{
+	color: #fff;
+	color: rgba(0,0,0,0.5);
+	padding: 0 calc(50%-960px);
+}
+
+h1{
+	font-size: 4em;
+	font-weight: bold;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+p{
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: ultrathin;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: ultrathin;
+}
+.section{
+	text-align:center;
+	object-fit: cover;
+}
+#menu li {
+	display:inline-block;
+	margin-right: 5px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position: relative;
+	margin-top: 15px;
+	margin-right: 15px;
+}
+
+.navbar {
+	height: 65px;
+}
+.navbar-brand {
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+#section0 {
+	background-image: url("img/dark-texture2.png");
+}
+
+#slide1 {
+	background-image: url("img/dark-texture.png");
+}
+#slide1 h1{
+	color: #fff;
+}
+#slide1 .intro p{
+	color: #fff;
+}
+
+#slide2 {
+	background-image: url("img/light-texture.png");
+}
+#slide2 h1{
+	color: #000;
+}
+#slide2 p{
+	color: #000;
+}
+
+#slide3 {
+	background-image: url("img/dark-texture.png");
+}
+#slide3 h1{
+	color: #fff;
+}
+#slide3 p{
+	color: #fff;
+}
+#slide3 h3{
+	color: #666;
+}
+
+#slide4 {
+	background-image: url("img/light-texture.png");
+}
+#slide4 h1{
+	color: #000;
+}
+#slide4 p{
+	color: #000;
+}
+
+#section2 {
+	background-image: url("img/dark-texture.png");
+}
+
+#section3 {
+	background-image: url("img/dark-texture2.png");
+}
+
+@media screen and (min-width: 1024px) {
+    p{
+        font-size: 22px;
+	}
+	.intro p{
+		font-size: 22px;
+	}
+	.menu {
+		display: inline-flex !important;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+    p{
+        font-size: 22px;
+	}
+	.intro p{
+		font-size: 22px;
+	}
+	.text-muted{
+		font-size: 22px;
+	}
+	.row {
+		padding: 0 calc(75%-1024px);
+	}
+	.menu {
+		display: inline-flex !important;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+    p{
+        font-size: 18px;
+	}
+	.intro p{
+		font-size: 16px;
+	}
+	.text-muted{
+		font-size: 18px;
+	}
+	.row {
+		padding: 0 calc(75%-768px);
+	}
+	.menu {
+		display: inline-flex !important;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+    p{
+        font-size: 16px;
+	}
+	.intro p{
+		font-size: 14px;
+	}
+	.text-muted{
+		font-size: 18px;
+	}
+	.row {
+		padding: 0 calc(75%-600px);
+	}
+	.menu {
+		display: none !important;
+	}
+}
+
+.text-muted {
+	position: absolute;
+	top: auto;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	font-size: 18px;
+}
+
+.btn.btn-primary{
+	margin-top: 5px;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+
+.card-title {
+	color: #000;
+}
+
+.card-text {
+	color: #222;
+	font-size: 14px;
+}
+
+.row {
+	height: 50%;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	display: inline-flex;
+}
+
+.list-group-item {
+	height: 50px;
+	background: rgba(255,255,255,0.2);
+}
+
+.card {
+	height: 400px;
+	width: 300px;
+	border-radius: 20px !important;
+	background: rgba(255,255,255,0.6);
+}
+
+.card-body h6{
+	font-size: 12px;
+	color: #000;
+}
+.card-body h4{
+	font-size: 26px;
+	font-weight: bold;
+}
+.card-body h5{
+	font-size: 28px;
+	color: #333;
+	font-weight: bold;
+}
+
+.card-text {
+	margin: auto !important;
+	font-size: 16px !important;
+}
