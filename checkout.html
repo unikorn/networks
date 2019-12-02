@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset='UTF-8'>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Заказать сервер от Networks.ua</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/menu-color-changer-v0.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" charset="UTF-8" />
+</head>
+
+<script>
+	jQuery(document).ready(function($) {
+		$("#fullpage").fullpage({
+			sectionsColor:['#2a2a2a','#2a2a2a','#2a2a2a', '#2a2a2a'],
+			anchors:['firstPage'],
+			menu:'#menu',
+			scrollBar:false,
+			//scrollOverflow:true
+			navigation:true,
+			navigationTooltips:['Начало'],
+			slidesNavigation:true,
+			navigationPosition:'left',
+			//slidesNavPosition:'top'
+			loopTop:true,
+			loopBottom:true,
+			loopHorizontal:false,			
+		});
+	})
+</script>
+<body>
+<div class="container">
+    <nav class="navbar fixed-top navbar-light style="background-color: #000000;">
+        <img class="navbar-brand" src="img/logo.png" height="45px" href="#">
+    <ul id="menu">
+        <li class="menuItem" data-menuanchor="firstPage"><a href="index.html#firstPage">Главная</a></li>
+    </ul>
+    </nav>
+</div>
+<div id="fullpage">
+    <div class="section" id="section0">
+        <div class="jumbotron">
+                <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text" for="inputGroupSelect01">Тариф</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                          <option selected>Ваш выбор</option>
+                          <option value="1">OFFICE 5</option>
+                          <option value="2">OFFICE 10</option>
+                          <option value="3">OFFICE 20</option>
+                          <option value="4">Заказной</option>
+                        </select>
+                      </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
