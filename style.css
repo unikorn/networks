@@ -88,6 +88,7 @@ p{
 }
 #menu{
 	position: relative;
+	display: inline-flex;
 	margin-top: 15px;
 	margin-right: 15px;
 }
@@ -155,7 +156,7 @@ p{
 	background-image: url("img/dark-texture2.png");
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 720px) {
     p{
         font-size: 22px;
 	}
@@ -177,9 +178,6 @@ p{
 	.text-muted{
 		font-size: 22px;
 	}
-	.row {
-		padding: 0 calc(75%-1024px);
-	}
 	.menu {
 		display: inline-flex !important;
 	}
@@ -195,9 +193,6 @@ p{
 	.text-muted{
 		font-size: 18px;
 	}
-	.row {
-		padding: 0 calc(75%-768px);
-	}
 	.menu {
 		display: inline-flex !important;
 	}
@@ -212,12 +207,6 @@ p{
 	}
 	.text-muted{
 		font-size: 18px;
-	}
-	.row {
-		padding: 0 calc(75%-600px);
-	}
-	.menu {
-		display: none !important;
 	}
 }
 
@@ -250,7 +239,7 @@ p{
 	width: auto;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30px;
+	margin-top: 35px;
 	display: inline-flex;
 }
 
