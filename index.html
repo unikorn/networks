@@ -3,6 +3,7 @@
 <meta charset='UTF-8'>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Серверы от Networks.ua</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
@@ -23,7 +24,7 @@
 			scrollBar:false,
 			//scrollOverflow:true
 			navigation:true,
-			navigationTooltips:['Начало','Преимущества','Тарифы', 'Подробнее'],
+			navigationTooltips:['Начало','Преимущества', 'Тарифы', 'Заказать'],
 			slidesNavigation:true,
 			navigationPosition:'left',
 			//slidesNavPosition:'top'
@@ -34,181 +35,202 @@
 	})
 </script>
 <body>
-
 	<div class="container">
-		<nav class="navbar fixed-top navbar-light style="background-color: #000000;">
-			<img class="navbar-brand" src="img/logo.png" height="45px" href="#">
-		<ul id="menu">
-			<li class="menuItem" data-menuanchor="firstPage"><a href="#firstPage">Начало</a></li>
-			<li class="menuItem" data-menuanchor="secondPage"><a href="#secondPage">Преимущества</a></li>
-			<li class="menuItem" data-menuanchor="3rdPage"><a href="#3rdPage">Тарифы</a></li>
-			<li class="menuItem" data-menuanchor="4thPage"><a href="#4thPage">Подробнее</a></li>
-		</ul>
+		<nav class="navbar fixed-top navbar-light">
+			<img class="navbar-brand" src="../img/logo.png" height="45px" href="#">
 		</nav>
 	  </div>
 
 <div id="fullpage">
 	<div class="section" id="section0">
 		<div class="intro">
-			<h1>Серверы в Германии для вашего бизнеса</h1>
-			<p>Стабильно, быстро и надёжно.</p>
-			<br />
-			<br />
-			<a href="#secondPage"><img src="img/strelka.png"></a>
+			<h1>Скажите "нет" хакерам и сбоям</h1>
+			<p>Арендуйте сервер в Германии от Networks.ua</p>
+			<a href="#secondPage"><img src="../img/strelka.png"></a>
 		</div>
 	</div>
-	
 	<div class="section" id="section1">
-	    <div class="slide" id="slide1">
-			<div class="intro">
-				<h1>Всегда подходящее решение.</h1>
-				<p>
-					С каждым клиентом работа ведется индивидуально, и мы подбираем конфигурацию, максимально соответствующую Вашим запросам.
-				</p>
-			</div>
-		</div>
-
-	    <div class="slide" id="slide2">
-			<h1>Быстрое подключение.</h1>
-				<p>
-					Всего за один рабочий день можно полностью<br /> подключить нового клиента и дать доступ к серверу.
-				</p>
-		</div>
-		<div class="slide" id="slide3">
-			<h1>Очевидная выгода.</h1>
-				<p>
-					Вы не покупаете дорогостоящее оборудование,<br /> а арендуете его ровно столько, сколько вам необходимо по времени.
-				</p>
-		</div>
-		<div class="slide" id="slide4">
-			<h1>Высокая скорость - <br />эффективная работа.</h1>
-				<p>
-					Быстродействие наших серверов способствует оперативному, а главное, <br />комфортному решению поставленных задач.
-				</p>
-		</div>
-
-	</div>
-	<div class="section section-desktop" id="section2">
 		<div class="d-none d-lg-block">
-			<br />
-			<br />
-			<br />
-			<br />
-			<h1>Базовые тарифные планы</h1>
+		<br />
+		<br />
+		<br />
+		<h1>Наши преимущества</h1>
 			<div class="row">
 				<div class="col-sm">
 					<div class="card" style="width: 18rem;">
 						<div class="card-body">
-							<h5 class="card-title">OFFICE 5</h5>
-							<p class="card-text">Сервер начального уровня для развивающегося бизнеса.</p>
+							<h5 class="card-title">Безопасность</h5>
+							<p class="card-text">Наши сервера обладают высокой степенью защиты от различных хакерских атак.</p>
 						</div>
 						<ul class="list-group list-group-flush">
-							<li class="list-group-item">4-ядерный процессор</li>
-							<li class="list-group-item">8 Гб ОЗУ</li>
-							<li class="list-group-item">80 Гб SSD</li>
+							<li class="list-group-item">Использование VPN</li>
+							<li class="list-group-item">Шифрование данных</li>
+							<li class="list-group-item">Резервное копирование</li>
 						</ul>
-						<div class="card-body">
-							<h6>До 10 пользователей</h6>
-							<h3>100€/месяц</h3>
-							<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
-						</div>
 					</div>
 				</div>
-			<div class="col-sm">
+				<div class="col-sm">
 					<div class="card" style="width: 18rem;">
 						<div class="card-body">
-							<h5 class="card-title">OFFICE 10</h5>
-							<p class="card-text">Продвинутый сервер для предприятия.</p>
+							<h5 class="card-title">Скорость</h5>
+							<p class="card-text">Быстродействие серверов обеспечивает высокую продуктивность при выполнении задач.</p>
 						</div>
 						<ul class="list-group list-group-flush">
-							<li class="list-group-item">8-ядерный процессор</li>
-							<li class="list-group-item">12 Гб ОЗУ</li>
-							<li class="list-group-item">150 Гб SSD</li>
+							<li class="list-group-item">Мощные процессоры Intel Xeon</li>
+							<li class="list-group-item">Гигабитный канал связи</li>
+							<li class="list-group-item">SSD-диски с быстрым чтением</li>
 						</ul>
-						<div class="card-body">
-							<h6>До 20 пользователей</h6>
-							<h3>200€/месяц</h3>
-							<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
-						</div>
 					</div>
 				</div>
-			<div class="col-sm">
+				<div class="col-sm">
 					<div class="card" style="width: 18rem;">
 						<div class="card-body">
-							<h5 class="card-title">OFFICE 20</h5>
-							<p class="card-text">Мощный сервер для серьёзных задач.</p>
+							<h5 class="card-title">Выгода</h5>
+							<p class="card-text">Аренда сервера за рубежом - это выгодное вложение в свой бизнес.</p>
 						</div>
 						<ul class="list-group list-group-flush">
-							<li class="list-group-item">12-ядерный процессор</li>
-							<li class="list-group-item">24 Гб ОЗУ</li>
-							<li class="list-group-item">250 Гб SSD</li>
+							<li class="list-group-item">Бесплатная поддержка</li>
+							<li class="list-group-item">Скидки 50% на настройку</li>
+							<li class="list-group-item">Дешевле, чем покупка сервера</li>
 						</ul>
-						<div class="card-body">
-							<h6>До 30 пользователей</h6>
-							<h3>300€/месяц</h3>
-							<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="d-lg-none">
-				<div class="slide" id="slide1">
-					<h1>Базовые тарифные планы</h1>
-				</div>
-				<div class="slide" id="slide2">
-					<h1>OFFICE 5</h1>
-					<p>Надёжное решение для небольшого офиса. 4-ядерный процессор, 8 Гб ОЗУ, 80 Гб SSD.</p>
-					<h6>До 10 пользователей</h6>
-					<h3>100€/месяц</h3>
-				</div>
-				<div class="slide" id="slide3">
-					<h1>OFFICE 10</h1>
-					<p>Продвинутый сервер для растущего бизнеса. 8-ядерный процессор, 12 Гб ОЗУ, 150 Гб SSD</p>
-					<h6>До 20 пользователей</h6>
-					<h3>200€/месяц</h3>
-				</div>
-				<div class="slide" id="slide4">
-					<h1>OFFICE 20</h1>
-					<p>Мощное решение для сложных задач. 12-ядерный процессор, 24 Гб ОЗУ, 250 Гб SSD.</p>
-					<h6>До 30 пользователей</h6>
-					<h3>300€/месяц</h3>
-				</div>
-			</div>
-	</div>
-	<!-- <div class="section section-mobile" id="section2">
-		<div class="d-sm-none d-lg-block">
 			<div class="slide" id="slide1">
-				<h1>Базовые тарифные планы</h1>
+				<h1>Наше главное преимущество - безопасность</h1>
+				<p>Сервера надёжно защищены от всех видов атак. <br/>Мы используем тунелирование через VPN с использованием шифрования,<br /> а также ежедневное резервное копирование данных.</p>
 			</div>
 			<div class="slide" id="slide2">
-				<h1>OFFICE 5</h1>
-				<p>Надёжное решение для небольшого офиса. 4-ядерный процессор, 8 Гб ОЗУ, 80 Гб SSD.</p>
-				<h6>До 10 пользователей</h6>
-				<h3>100€/месяц</h3>
+				<h1>Скорость работы превосходит сервер у вас в офисе.</h1>
+				<p>Быстрые процессоры и SSD-диски, а также гигабитный канал связи<br /> позволяют работать с удаленным сервером так, будто он<br /> стоит прямо у вас на рабочем месте.</p>
 			</div>
 			<div class="slide" id="slide3">
-				<h1>OFFICE 10</h1>
-				<p>Продвинутый сервер для растущего бизнеса. 8-ядерный процессор, 12 Гб ОЗУ, 150 Гб SSD</p>
-				<h6>До 20 пользователей</h6>
-				<h3>200€/месяц</h3>
-			</div>
-			<div class="slide" id="slide4">
-				<h1>OFFICE 20</h1>
-				<p>Мощное решение для сложных задач. 12-ядерный процессор, 24 Гб ОЗУ, 250 Гб SSD.</p>
-				<h6>До 30 пользователей</h6>
-				<h3>300€/месяц</h3>
+				<h1>Аренда сервера - это выгодно.</h1>
+				<p>Никаких расходов на создание и поддержку собственной инфраструктуры,<br /> не нужно нанимать отдельных людей для её обслуживания -<br /> это уже включено в стоимость аренды.</p>
 			</div>
 		</div>
-	</div> -->
+	</div>
 	<div class="section" id="section3">
+			<div class="d-none d-lg-block">
+				<br />
+				<br />
+				<br />
+				<h1>Базовые тарифные планы</h1>
+				<div class="row">
+					<div class="col-sm">
+						<div class="card" style="width: 18rem;">
+							<div class="card-body">
+								<h5 class="card-title">OFFICE 5</h5>
+								<p class="card-text">Сервер начального уровня для развивающегося бизнеса.</p>
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">4-ядерный процессор</li>
+								<li class="list-group-item">8 Гб ОЗУ</li>
+								<li class="list-group-item">80 Гб SSD</li>
+							</ul>
+							<div class="card-body">
+								<h6>До 10 пользователей</h6>
+								<h3>100€/месяц</h3>
+								<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
+							</div>
+						</div>
+					</div>
+				<div class="col-sm">
+						<div class="card" style="width: 18rem;">
+							<div class="card-body">
+								<h5 class="card-title">OFFICE 10</h5>
+								<p class="card-text">Продвинутый сервер для предприятия.</p>
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">8-ядерный процессор</li>
+								<li class="list-group-item">12 Гб ОЗУ</li>
+								<li class="list-group-item">150 Гб SSD</li>
+							</ul>
+							<div class="card-body">
+								<h6>До 20 пользователей</h6>
+								<h3>200€/месяц</h3>
+								<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
+							</div>
+						</div>
+					</div>
+				<div class="col-sm">
+						<div class="card" style="width: 18rem;">
+							<div class="card-body">
+								<h5 class="card-title">OFFICE 20</h5>
+								<p class="card-text">Мощный сервер для серьёзных задач.</p>
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item">12-ядерный процессор</li>
+								<li class="list-group-item">24 Гб ОЗУ</li>
+								<li class="list-group-item">250 Гб SSD</li>
+							</ul>
+							<div class="card-body">
+								<h6>До 30 пользователей</h6>
+								<h3>300€/месяц</h3>
+								<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="d-lg-none">
+					<div class="slide" id="slide1">
+						<h1>Самое популярное решение: тариф OFFICE 10</h1>
+						<p>8 ядер, 12 Гб ОЗУ, 150 Гб SSD</p>
+						<h6>До 20 пользователей</h6>
+						<h3>200€/месяц</h3>
+					</div>
+					<div class="slide" id="slide2">
+						<h1>Самое выгодное решение: тариф OFFICE 5</h1>
+						<p>4 ядра, 8 Гб ОЗУ, 80 Гб SSD.</p>
+						<h6>До 10 пользователей</h6>
+						<h3>100€/месяц</h3>
+					</div>
+					<div class="slide" id="slide3">
+						<h1>Самое топовое решение: тариф OFFICE 10</h1>
+						<p>12 ядер, 24 Гб ОЗУ, 250 Гб SSD</p>
+						<h6>До 20 пользователей</h6>
+						<h3>300€/месяц</h3>
+					</div>
+				</div>
+		</div>
+	<div class="section" id="section4">
 		<div class="intro">
-			<h1>Арендуйте сервер прямо сейчас</h1>
-			<p>и получите скидку 50% на настройку при выборе годового контракта.</p>
+			<h1>Специальное предложение</h1>
+			<p>Скидка 50% на настройку сервера<br /> при оформлении годового контракта</p>
+			<br />
 			<p><button class="btn btn-primary">Узнать больше</button></p>
-			<span class="text-muted">Контакты: mmreva@gmail.com / +38(067)-630-07-93</span>
+			<span class="text-muted">Контакты: <a href="mailto:mmreva@gmail.com">mmreva@gmail.com</a> / <a href="tel:+38(067)-630-07-93">+38(067)-630-07-93</a></span>
 		</div>
 	</div>
 </div>
+<style>
+	#section0 {
+		background-image: url("../img/server.jpg") !important;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	#section1 {
+		background-image: url("../img/security.jpg") !important;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	#section3 {
+		background-image: url("../img/offers.jpg") !important;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	#section4 {
+		background-image: url("../img/special.jpg") !important;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+</style>
 </body>
 </html>
