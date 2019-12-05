@@ -130,14 +130,33 @@ p{
 }
 
 .jumbotron {
-	position: relative;
+	position: absolute;
 	display: flexbox;
-	margin-left: 50px !important;
-	margin-right: 50px !important;
+	margin-top: 50px;
+	margin-left: 350px;
+	margin-right: 350px;
 	top: auto;
 	bottom: auto;
 	left: 0;
 	right: 0;
+}
+
+.jumbotron {
+	background: rgba(255,255,255,0.8);
+}
+
+.jumbotron h1 {
+	color: #222;
+	font-size: 32px;
+}
+
+.jumbotron p {
+	color: #333;
+	font-size: 18px;
+}
+
+.jumbotron hr {
+	color: rgba(255,255,255,0.8);
 }
 
 #section0 a {
@@ -152,9 +171,6 @@ p{
 	.intro p{
 		font-size: 22px;
 	}
-	.menu {
-		display: inline-flex !important;
-	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -166,9 +182,6 @@ p{
 	}
 	.text-muted{
 		font-size: 22px;
-	}
-	.menu {
-		display: inline-flex !important;
 	}
 }
 
@@ -182,8 +195,16 @@ p{
 	.text-muted{
 		font-size: 18px;
 	}
-	.menu {
-		display: inline-flex !important;
+	.jumbotron {
+		height: 50%;
+		margin-left: 50px !important;
+		margin-right: 50px !important;
+	}
+	.jumbotron h1 {
+		font-size: 24px;
+	}
+	.jumbotron p {
+		font-size: 16px;
 	}
 }
 
@@ -212,4 +233,10 @@ p{
 #section4.btn.btn-primary {
 	padding: 0;
 	margin-top: 50px !important;
+}
+
+.card img {
+	width: 150px;
+	align-self: center;
+	margin: 20px;
 }
