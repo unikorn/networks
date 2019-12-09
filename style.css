@@ -1,246 +1,194 @@
+/* style.css for Networks.ua Landing page
+Aqualabs, 2019. Shared via MIT License. */
+
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
     padding: 0;
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
 }
-	
-h1 {
-    font-weight: bold;
-    font-size: 100%;
-    margin:0;
-    padding:0;
-    color:#fff;
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.section{
+/* Section parameters */
+
+.section {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.section {
+	align-self: center;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 }
 
-body{
-	color: #fff;
-	color: rgba(0,0,0,0.5);
-	padding: 0 calc(50%-960px);
+.section h1 {
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	margin-top: 25px;
 }
 
-h1{
-	font-size: 4em;
+.section h1 {
 	font-weight: bold;
-	margin-left: 50px;
-	margin-right: 50px;
-}
-p{
-	font-size: 1.5em;
-	color: #fff;
-	font-weight: ultrathin;
-	margin-left: 50px;
-	margin-right: 50px;
-}
-.intro p{
-	width: 50%;
-	margin: 0 auto;
-	font-size: 1.5em;
-	color: #fff;
-	font-weight: ultrathin;
-}
-.slide h1 {
-	font-size: 32px;
-}
-.slide h3 {
-	color: rgb(255,255,255,0.7);
-}
-.slide h6 {
-	color: rgb(255,255,255,0.5);
-}
-.section{
-	text-align:center;
-	object-fit: cover;
+	font-size: 48px;
 }
 
-.navbar {
-	height: 55px;
-}
-.navbar-brand {
-	margin-left: 15px;
-	margin-top: 0;
+.section p{
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	font-size: 20px;
 }
 
-.text-muted {
+.arrow {
+	margin-left: 50px;
+	margin-bottom: 50px;
 	position: absolute;
-	top: auto;
-	bottom: 10px;
-	left: 0;
-	right: 0;
-	font-size: 18px;
 }
 
-.btn.btn-primary{
-	margin-top: 5px;
-	margin-left: 30%;
-	margin-right: 30%;
-}
-
-.card-title {
-	color: #000;
-}
-
-.card-text {
-	color: #222;
-	font-size: 14px;
-}
-
-.row {
-	height: 50%;
-	width: auto;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 35px;
-	display: inline-flex;
-}
-
-.list-group-item {
-	height: 50px;
-	background: rgba(255,255,255,0.2);
-}
+/* Card parameters */
 
 .card {
-	height: 400px;
-	width: 300px;
-	border-radius: 20px !important;
-	background: rgba(255,255,255,0.6);
-}
-
-.card-body h6{
-	font-size: 12px;
-	color: #000;
-}
-.card-body h4{
-	font-size: 26px;
-	font-weight: bold;
-}
-.card-body h5{
-	font-size: 28px;
-	color: #333;
-	font-weight: bold;
-}
-
-.card-text {
-	margin: auto !important;
-	font-size: 16px !important;
-}
-
-.jumbotron {
-	position: absolute;
-	display: flexbox;
-	margin-top: 50px;
-	margin-left: 350px;
-	margin-right: 350px;
-	top: auto;
-	bottom: auto;
-	left: 0;
-	right: 0;
-}
-
-.jumbotron {
-	background: rgba(255,255,255,0.8);
-}
-
-.jumbotron h1 {
-	color: #222;
-	font-size: 32px;
-}
-
-.jumbotron p {
-	color: #333;
-	font-size: 18px;
-}
-
-.jumbotron hr {
-	color: rgba(255,255,255,0.8);
-}
-
-#section0 a {
-	margin-bottom: 50px;
-	bottom: 0;
-}
-
-@media screen and (min-width: 720px) {
-    p{
-        font-size: 22px;
-	}
-	.intro p{
-		font-size: 22px;
-	}
-}
-
-@media only screen and (max-width: 1024px) {
-    p{
-        font-size: 22px;
-	}
-	.intro p{
-		font-size: 22px;
-	}
-	.text-muted{
-		font-size: 22px;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-    p{
-        font-size: 18px;
-	}
-	.intro p{
-		font-size: 16px;
-	}
-	.text-muted{
-		font-size: 18px;
-	}
-	.jumbotron {
-		height: 50%;
-		margin-left: 50px !important;
-		margin-right: 50px !important;
-	}
-	.jumbotron h1 {
-		font-size: 24px;
-	}
-	.jumbotron p {
-		font-size: 16px;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-	.intro h1{
-		font-size: 16px;
-	}
-	h1{
-		font-size: 16px !important;
-	}
-    p{
-        font-size: 14px;
-	}
-	.intro p{
-		font-size: 12px;
-	}
-	.text-muted{
-		font-size: 12px;
-	}
-}
-
-#section1.list-group {
-	margin-bottom: 20px;
-}
-
-#section4.btn.btn-primary {
-	padding: 0;
-	margin-top: 50px !important;
+	height: 65vh;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 20px;
 }
 
 .card img {
 	width: 150px;
+	display: flex;
+	flex-direction: column;
 	align-self: center;
-	margin: 20px;
+	margin-top: 25px;
+	margin-bottom: 15px;
 }
 
-#section1 .card {
-	background-color: rgba(255,255,255,0.9) !important;
+.card p{
+	font-size: 18px;
+}
+
+.card-title {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.card-body h3 {
+	color: #333;
+}
+
+.card-body h6 {
+	color: #888;
+}
+
+.card button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.list-group-item {
+	background-color: rgba(255,255,255,0.3);
+}
+
+/* Form properties */
+
+form {
+	background-color: rgba(255,255,255,0.5);
+	margin: 25px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: none;
+	width: 100hw;
+}
+  
+#formButton {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* @media features */
+
+@media all and (max-width: 576px) {
+	.row{
+		column-count: 1;
+		column-gap: 25px;
+		display: flex;
+		align-self: center;
+		align-items: center;
+	}
+}
+
+@media all and (min-width: 768px) {
+	.row {
+		column-count: 2;
+		column-gap: 25px;
+		display: flex;
+		align-self: center;
+		align-items: center;
+	}
+}
+
+/* Footer */
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	background-color: #414a4f;
+	padding: 60px 0;
+	width: 100vw;
+}
+
+footer ul{
+	display: flex;
+	margin-bottom: 25px;
+	font-size: 32px;
+}
+
+footer ul li{
+	margin: 0 8px;
+	list-style-type: none;	
+}
+
+footer ul li:first-child{
+	margin-left: 0;	
+}
+
+footer ul li:last-child{
+	margin-right: 0;	
+}
+
+footer p{
+	text-transform: uppercase;
+	font-size: 14px;
+	color: rgba(255,255,255,0.6);
+	margin-bottom: 10px;
+}
+
+footer p a{
+	color: #fff;
+}
+
+footer a{
+	color: #fff;
+}
+@media (max-width: 700px){
+
+	footer{
+		padding: 80px 15px;
+	}
+
 }
