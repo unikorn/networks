@@ -11,90 +11,76 @@
 	<link rel="stylesheet" type="text/css" href="style.css" charset="UTF-8" />
 </head>
 <body>
-	<div class="container">
-		<nav class="navbar fixed-top navbar-light">
-			<img class="navbar-brand" src="img/Networks_logo.png" height="45px" href="#">
-			<div class="d-none d-lg-block navbar-flex">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="#section0">Главная</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#section1">Преимущества</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#section2">Тарифы</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#section3">Контакты</a>
-					</li>
-				</ul>
-			</div>
-			<div class="d-lg-none d-md-block">
-				<div class="dropdown">
-					<button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-hidden="true">
-						<i class="fa fa-list" aria-hidden="true"></i>
-						Меню
-					</button>
-					<div class="dropdown-menu dropdown-menu-sm-left" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#section0">Главная</a>
-						<a class="dropdown-item" href="#section1">Преимущества</a>
-						<a class="dropdown-item" href="#section2">Тарифы</a>
-						<a class="dropdown-item" href="#section3">Контакты</a>
-					</div>
-				</div>
-			</div>
-		</nav>
-	  </div>
-	<div class="section" id="section0">
-		<h1>Скажите "нет" хакерам и сбоям</h1>
-		<p>Надёжные серверы в Германии от Networks.ua</p>
-		<button type="button" class="btn btn-lg btn-primary" id="formButton">Связаться с нами</button>
-
-<form id="form1">
-	<b>Оставьте свои контакты</b>
-		<div class="input-group mb-3">
-			<input type="text" class="form-control" placeholder="Ваш E-mail или номер телефона" aria-label="Recipient's username" aria-describedby="button-addon2">
-			<div class="input-group-append">
-				<button class="btn btn-primary" id="formButton" type="button" id="button-addon2">Отправить</button>
-			</div>
-		</div>
-</form>
-	</div>
-	<div class="section" id="section1">
-		<h1>Наши преимущества</h1>
+	<nav class="navbar fixed-top navbar-light">
+		<a href="#"><img class="navbar-brand" src="img/Networks_logo.png" height="45px"></a>
 		<div class="d-none d-lg-block">
-			<div class="row">
-				<div class="col-sm">
-					<div class="card" style="width: 18rem;">
-						<img src="img/security_ico.png" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Безопасность</h5>
-							<p class="card-text">Наши серверы надежно защищены от атак благодаря VPN-тунелированию и шифрованию.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm">
-					<div class="card" style="width: 18rem;">
-						<img src="img/speed_ico.png" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Скорость</h5>
-							<p class="card-text">Мощные процессоры Intel Xeon, SSD-диски и гигабитный канал связи обеспечивают высокую скорость работы.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm">
-					<div class="card" style="width: 18rem;">
-						<img src="img/money_ico.png" class="card-img-top" alt="...">
-						<div class="card-body">
-							<h5 class="card-title">Выгода</h5>
-							<p class="card-text">Не нужно тратиться на покупку и содержание своей инфраструктуры - аренда обходится дешевле.</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Главная</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#goto2">Преимущества</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#goto3">Тарифы</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#goto4">Контакты</a>
+				</li>
+			</ul>
 		</div>
 		<div class="d-lg-none d-md-block">
+			<div class="btn-group dropleft">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-hidden="true">
+					Меню
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#">Главная</a>
+					<a class="dropdown-item" href="#goto2">Преимущества</a>
+					<a class="dropdown-item" href="#goto3">Тарифы</a>
+					<a class="dropdown-item" href="#goto4">Контакты</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="flex" id="section0">
+		<h1>Обеспечьте защиту своим данным</h1>
+		<p>Networks.ua предоставляет аренду выделенных серверов в Германии</p>
+	</div>
+	<div class="flex" id="section1">
+		<h1 id="goto2">Наши преимущества</h1>
+		<div class="d-none d-lg-block">
+			<div class="row">
+				<div class="col-sm">
+					<div class="card" style="width: 18rem;">
+						<img src="img/security_ico.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Безопасность</h5>
+							<p class="card-text">Наши серверы надежно защищены от атак благодаря VPN-тунелированию и шифрованию.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="card" style="width: 18rem;">
+						<img src="img/speed_ico.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Скорость</h5>
+							<p class="card-text">Мощные процессоры Intel Xeon, SSD-диски и гигабитный канал связи обеспечивают высокую скорость работы.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm">
+					<div class="card" style="width: 18rem;">
+						<img src="img/money_ico.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Выгода</h5>
+							<p class="card-text">Не нужно тратиться на покупку и содержание своей инфраструктуры - аренда обходится дешевле.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="d-lg-none d-xl-none">
 			<div class="row">
 				<div class="col-sm">
 					<div class="card" style="width: 18rem;">
@@ -130,153 +116,146 @@
 			</div>
 		</div>
 	</div>
-	<div class="section" id="section2">
-		<h1>Базовые тарифные планы</h1>
+	<div class="flex" id="section2">
+		<h1 id="goto3">Базовые тарифные планы</h1>
 		<div class="d-none d-lg-block">
-				<div class="row">
-					<div class="col-sm">
-						<div class="card" style="width: 18rem;">
-							<div class="card-body">
-								<h5 class="card-title">OFFICE 5</h5>
-								<p class="card-text">Начальный уровень для развивающегося бизнеса.</p>
-							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">4-ядерный процессор</li>
-								<li class="list-group-item">8 Гб ОЗУ</li>
-								<li class="list-group-item">80 Гб SSD</li>
-							</ul>
-							<div class="card-body">
-								<h6>До 10 пользователей</h6>
-								<h3>100€/месяц</h3>
-								<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
-							</div>
+			<div class="row">
+				<div class="col-sm">
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title">OFFICE 5</h5>
+							<p class="card-text">Начальный уровень для развивающегося бизнеса.</p>
 						</div>
-					</div>
-					<div class="col-sm">
-						<div class="card" style="width: 18rem;">
-							<div class="card-body">
-								<h5 class="card-title">OFFICE 10</h5>
-								<p class="card-text">Продвинутый сервер для предприятия.</p>
-							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">8-ядерный процессор</li>
-								<li class="list-group-item">12 Гб ОЗУ</li>
-								<li class="list-group-item">150 Гб SSD</li>
-							</ul>
-							<div class="card-body">
-								<h6>До 20 пользователей</h6>
-								<h3>200€/месяц</h3>
-								<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm">
-						<div class="card" style="width: 18rem;">
-							<div class="card-body">
-								<h5 class="card-title">OFFICE 20</h5>
-								<p class="card-text">Мощный сервер для серьёзных задач.</p>
-							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item">12-ядерный процессор</li>
-								<li class="list-group-item">24 Гб ОЗУ</li>
-								<li class="list-group-item">250 Гб SSD</li>
-							</ul>
-							<div class="card-body">
-								<h6>До 30 пользователей</h6>
-								<h3>300€/месяц</h3>
-								<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
-							</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">4-ядерный процессор</li>
+							<li class="list-group-item">8 Гб ОЗУ</li>
+							<li class="list-group-item">80 Гб SSD</li>
+						</ul>
+						<div class="card-body">
+							<h6>До 10 пользователей</h6>
+							<h3>100€/месяц</h3>
+							<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
 						</div>
 					</div>
 				</div>
-		</div>
-				<div class="d-lg-none d-md-block">
-					<div class="row">
-						<div class="col-sm">
-							<div class="card" style="width: 18rem;">
-								<div class="card-body">
-									<h5 class="card-title">OFFICE 5</h5>
-									<p class="card-text">Начальный уровень для развивающегося бизнеса.</p>
-								</div>
-								<ul class="list-group list-group-flush">
-									<li class="list-group-item">4-ядерный процессор</li>
-									<li class="list-group-item">8 Гб ОЗУ</li>
-									<li class="list-group-item">80 Гб SSD</li>
-								</ul>
-								<div class="card-body">
-									<h6>До 10 пользователей</h6>
-									<h3>100€/месяц</h3>
-									<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
-								</div>
-							</div>
+				<div class="col-sm">
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title">OFFICE 10</h5>
+							<p class="card-text">Продвинутый сервер для предприятия.</p>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">8-ядерный процессор</li>
+							<li class="list-group-item">12 Гб ОЗУ</li>
+							<li class="list-group-item">150 Гб SSD</li>
+						</ul>
+						<div class="card-body">
+							<h6>До 20 пользователей</h6>
+							<h3>200€/месяц</h3>
+							<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-sm">
-							<div class="card" style="width: 18rem;">
-								<div class="card-body">
-									<h5 class="card-title">OFFICE 10</h5>
-									<p class="card-text">Продвинутый сервер для предприятия.</p>
-								</div>
-								<ul class="list-group list-group-flush">
-									<li class="list-group-item">8-ядерный процессор</li>
-									<li class="list-group-item">12 Гб ОЗУ</li>
-									<li class="list-group-item">150 Гб SSD</li>
-								</ul>
-								<div class="card-body">
-									<h6>До 20 пользователей</h6>
-									<h3>200€/месяц</h3>
-									<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
-								</div>
-							</div>
+				</div>
+				<div class="col-sm">
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title">OFFICE 20</h5>
+							<p class="card-text">Мощный сервер для серьёзных задач.</p>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm">
-							<div class="card" style="width: 18rem;">
-								<div class="card-body">
-									<h5 class="card-title">OFFICE 20</h5>
-									<p class="card-text">Мощный сервер для серьёзных задач.</p>
-								</div>
-								<ul class="list-group list-group-flush">
-									<li class="list-group-item">12-ядерный процессор</li>
-									<li class="list-group-item">24 Гб ОЗУ</li>
-									<li class="list-group-item">250 Гб SSD</li>
-								</ul>
-								<div class="card-body">
-									<h6>До 30 пользователей</h6>
-									<h3>300€/месяц</h3>
-									<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
-								</div>
-							</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">12-ядерный процессор</li>
+							<li class="list-group-item">24 Гб ОЗУ</li>
+							<li class="list-group-item">250 Гб SSD</li>
+						</ul>
+						<div class="card-body">
+							<h6>До 30 пользователей</h6>
+							<h3>300€/месяц</h3>
+							<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	<div class="section" id="section3">
-		<h1>Свяжитесь с нами для заказа</h1>
-		<p>и получите -50% на настройку сервера при оформлении годового контракта</p>
-		<div class="input-group mb-3">
-			<input type="text" class="form-control" placeholder="Ваш E-mail или номер телефона" aria-label="Recipient's username" aria-describedby="button-addon2">
-			<div class="input-group-append">
-			  <button class="btn btn-outline-secondary" type="button" id="button-addon2">Получить скидку!</button>
+		<div class="d-lg-none d-xl-none">
+			<div class="row">
+				<div class="col-sm">
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title">OFFICE 5</h5>
+							<p class="card-text">Начальный уровень для развивающегося бизнеса.</p>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">4-ядерный процессор</li>
+							<li class="list-group-item">8 Гб ОЗУ</li>
+							<li class="list-group-item">80 Гб SSD</li>
+						</ul>
+						<div class="card-body">
+							<h6>До 10 пользователей</h6>
+							<h3>100€/месяц</h3>
+							<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title">OFFICE 10</h5>
+							<p class="card-text">Продвинутый сервер для предприятия.</p>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">8-ядерный процессор</li>
+							<li class="list-group-item">12 Гб ОЗУ</li>
+							<li class="list-group-item">150 Гб SSD</li>
+						</ul>
+						<div class="card-body">
+							<h6>До 20 пользователей</h6>
+							<h3>200€/месяц</h3>
+							<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm">
+					<div class="card" style="width: 18rem;">
+						<div class="card-body">
+							<h5 class="card-title">OFFICE 20</h5>
+							<p class="card-text">Мощный сервер для серьёзных задач.</p>
+						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item">12-ядерный процессор</li>
+							<li class="list-group-item">24 Гб ОЗУ</li>
+							<li class="list-group-item">250 Гб SSD</li>
+						</ul>
+						<div class="card-body">
+							<h6>До 30 пользователей</h6>
+							<h3>300€/месяц</h3>
+							<a href="checkout.html"><button class="btn btn-primary">Заказать</button></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+	<div class="flex" id="section3">
+		<h1 id="goto4">Свяжитесь с нами для заказа</h1>
+		<p>и получите -50% на настройку сервера при оформлении годового контракта</p>
+		<input type="text" class="form-control" placeholder="Ваш E-mail или номер телефона" aria-label="Recipient's username">
+		<button class="btn btn-outline-secondary" type="button" id="button-addon2">Получить скидку!</button>
+	</div>
 	<footer>
-			<h6>Наши контакты и ссылки:</h6>
-			<ul>
-				<li><a href="tel:+38(067)-630-07-93"><i class="fa fa-phone-square"></i></a></li>
-				<li><a href="mailto:mmreva@gmail.com"><i class="fa fa-envelope"></i></a></li>
-				<li><a href="https://facebook.com/networks.Ukraine"><i class="fa fa-facebook-official"></i></a></li>
-				<li><a href="https://instagram.com/networks.ua"><i class="fa fa-instagram"></i></a></li>
-				<li><a href="https://github.com/unikorn/networks"><i class="fa fa-github-square""></i></a></li>
-			</ul>
-			<p>Создано в <a href="http://networks.ua/" target="_blank">Aqualabs, Networks.ua</a>. </p>
-			<p>(с) Networks.ua, 2019. Все права защищены.</p>
-			<p>Исходный код распространяется по лицензии MIT.</p>
-		</footer>
+		<h6>Наши контакты и ссылки:</h6>
+		<ul>
+			<li><a href="tel:+38(067)-630-07-93"><i class="fa fa-phone-square"></i></a></li>
+			<li><a href="mailto:mmreva@gmail.com"><i class="fa fa-envelope"></i></a></li>
+			<li><a href="https://facebook.com/networks.Ukraine"><i class="fa fa-facebook-official"></i></a></li>
+			<li><a href="https://instagram.com/networks.ua"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+		<p>Создано в <a href="http://networks.ua/" target="_blank">Aqualabs, Networks.ua</a>. </p>
+		<p>(с) Networks.ua, 2019<br /> Все права защищены.</p>
+	</footer>
 </body>
 <style>
 	body {
@@ -286,5 +265,4 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="js/popovers.js"></script>
 </html>

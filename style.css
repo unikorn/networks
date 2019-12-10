@@ -3,59 +3,77 @@ Aqualabs, 2019. Shared via MIT License. */
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
 form,fieldset,input,textarea,p,blockquote,th,td {
-    padding: 0;
-	margin: 0;
 	font-family: 'Roboto', sans-serif;
-	z-index: 0;
 }
 
 body {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	min-width: 320px;
 }
 
 /* Navbar parameters */
-.navbar-nav {
-	display: inline-table;
-	margin-right: 5px;
+
+.navbar {
+	background-image: url('img/background.png') !important;
 }
 
-/* Section parameters */
+.navbar-nav {
+	flex-direction: row;
+	padding: 0;
+}
 
-.section {
+.nav-item:first-child {
+	margin-right: 15px;
+}
+
+.nav-item {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.nav-item:last-child {
+	margin-right: 15px;
+}
+
+/* Flex section parameters */
+
+.flex {
 	display: flex;
 	flex-direction: column;
-	min-height: 100%;
-	padding: 15px;
-	position: static;
+	width: 100%;
 }
 
-#section0 {
-	height: 100vh !important;
+#section3 {
+	width: 75vw;
 }
 
-.section {
+.flex {
 	align-self: center;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
 
-.section h1 {
+#section0 {
+	height: 100vh;
+}
+
+.flex h1 {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-self: center;
 	margin-top: 25px;
 }
 
-.section h1 {
+.flex h1 {
 	font-weight: bold;
-	font-size: 48px;
+	font-size: 36px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
-.section p{
+.flex p{
 	display: flex;
 	flex-direction: row;
 	align-self: center;
@@ -65,11 +83,14 @@ body {
 /* Card parameters */
 
 .card {
-	height: 65vh;
 	margin-top: 25px;
 	margin-bottom: 25px;
 	background-color: rgba(255,255,255,0.5);
 	border-radius: 20px;
+}
+
+#section1 .card {
+	min-height: 420px;
 }
 
 .card img {
@@ -99,7 +120,7 @@ body {
 }
 
 .card button {
-	margin-top: 10px;
+	margin-top: 5px;
 	margin-bottom: 10px;
 }
 
@@ -118,6 +139,11 @@ form {
 	padding-bottom: 15px;
 	display: none;
 	width: 100hw;
+	border-radius: 20px;
+}
+
+.form-control {
+	max-width: 65vw;
 }
   
 #formButton {
@@ -125,30 +151,68 @@ form {
 	margin-right: auto;
 	margin-left: auto;
 }
+
+.btn-outline-secondary {
+	margin: 12px;
+}
 /* @media features */
 
-@media (min-width: 992px){
-	section{
+@media (min-width: 1080px){
+	.flex{
 		margin-bottom: 150px;
 	}
-	.card {
-		height: 45vh;
+	.card button {
+		margin-top: 0;
 	}
+	body{
+		padding: 0 calc(50%-992px);
+	}
+}
 
+@media (min-width: 760px) {
+	.flex{
+		margin-bottom: 200px;
+	}
+	body{
+		padding: 0 calc(50%-760px);
+	}
+	h1{
+		font-size: 28px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
 
 @media (min-width: 576px){
-	section{
-		margin-bottom: 50px;
+	.flex{
+		margin-bottom: 250px;
+	}
+	body{
+		padding: 0 calc(50%-576px);
+	}
+	h1{
+		font-size: 24px;
+		margin-left: 25px;
+		margin-right: 25px;
 	}
 }
 
-@media (min-width: 320px){
-	.card {
-		height: 45vh;
+@media (min-width: 320px) {
+	.flex{
+		margin-bottom: 250px;
 	}
-
-}
+	.card button {
+		margin: 0;
+	}
+	body{
+		padding: 0 calc(50%-320px);
+	}
+	h1{
+		font-size: 22px;
+		margin-left: 35px;
+		margin-right: 35px;
+	}
+} 
 
 /* Footer */
 
@@ -156,7 +220,7 @@ footer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
+	justify-content: center;
 	color: #fff;
 	background-color: #414a4f;
 	padding: 60px 0;
@@ -164,13 +228,17 @@ footer{
 }
 
 footer ul{
-	display: flex;
+	display: inline-flex;
+	flex-direction: row;
 	margin-bottom: 25px;
 	font-size: 32px;
+	position: relative;
+	padding: 0;
 }
 
 footer ul li{
-	margin: 0 8px;
+	margin-right: 8px;
+	margin-left: 8px;
 	list-style-type: none;	
 }
 
@@ -207,4 +275,86 @@ footer a:hover {
 		padding: 80px 15px;
 	}
 
+}
+
+/* Dropdown settings */
+
+.dropdown {
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	align-self: center;
+}
+
+.dropdown-menu-center {
+	padding: 8px;
+	min-width: 50vw !important;
+	max-width: 75vw !important;
+	text-align: center;
+	transform: translateX(-50%) !important;
+	left: 50% !important;
+	top: 100% !important;
+	border-radius: 20px;
+	background: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.5);
+}
+
+.dropdown button {
+	display: flex;
+	padding: 8px;
+	margin: 8px;
+}
+
+/* Additional effects */
+
+.wrapper {
+	height: 25vh;
+	margin-bottom: 150px;
+  }
+  
+.parallax-img {
+	height: 50vh;
+	width: 100vw;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax-img h1 p {
+	position: relative;
+	display: grid;
+	flex-direction: column;
+	align-self: center;
+}
+  
+.parallax-img {
+	background-image: url('img/parallax.jpg');
+}
+
+#section1 h1::before {
+	display: block;
+	content: " ";
+	margin-top: 35px;
+	height: 35px;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+#section2 h1::before {
+	display: block;
+	content: " ";
+	margin-top: 35px;
+	height: 35px;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+#section3 h1::before {
+	display: block;
+	content: " ";
+	margin-top: 35px;
+	height: 35px;
+	visibility: hidden;
+	pointer-events: none;
 }
