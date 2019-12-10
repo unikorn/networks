@@ -6,7 +6,10 @@ From version v4.0 the Networks landing is not based on fullPage.js, but still go
 
 Full redesign and style.css written from scratch.
 
+
+
 Changelog:
+
 v4.2 "Scaled"
 - Scalable on mobile devices
 - Much better look
