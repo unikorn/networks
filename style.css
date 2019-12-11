@@ -157,7 +157,7 @@ form {
 }
 /* @media features */
 
-@media (min-width: 1080px){
+@media (min-width: 992px){
 	.flex{
 		margin-bottom: 150px;
 	}
@@ -166,6 +166,15 @@ form {
 	}
 	body{
 		padding: 0 calc(50%-992px);
+	}
+	#offerForm {
+		width: 45vw;
+	}
+	#offerForm .input-group {
+		width: 40vw;
+	}
+	#phoneInput {
+		width: 40vw;
 	}
 }
 
@@ -181,6 +190,15 @@ form {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+	#offerForm {
+		width: 50vw;
+	}
+	#offerForm .input-group {
+		width: 45vw;
+	}
+	#phoneInput {
+		width: 45vw;
+	}
 }
 
 @media (min-width: 576px){
@@ -194,6 +212,15 @@ form {
 		font-size: 24px;
 		margin-left: 25px;
 		margin-right: 25px;
+	}
+	#offerForm {
+		width: 75vw;
+	}
+	#offerForm .input-group {
+		width: 70vw;
+	}
+	#phoneInput {
+		width: 70vw;
 	}
 }
 
@@ -211,6 +238,15 @@ form {
 		font-size: 22px;
 		margin-left: 35px;
 		margin-right: 35px;
+	}
+	#offerForm {
+		width: 95vw;
+	}
+	#offerForm .input-group {
+		width: 90vw;
+	}
+	#phoneInput {
+		width: 90vw;
 	}
 } 
 
@@ -303,6 +339,66 @@ footer a:hover {
 	display: flex;
 	padding: 8px;
 	margin: 8px;
+}
+
+/* Offer form settings */
+
+#section2 {
+	margin-bottom: 50px;
+}
+
+#offerForm .input-group {
+	margin-bottom: 12px;
+}
+
+#offerForm .close {
+	margin-top: 12px;
+}
+
+.form-check i {
+	margin-right: 8px;
+	display: flex;
+}
+
+#offerForm h3 {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	color: rgba(0,0,0,0.6);
+}
+
+#offerForm {
+	background: rgba(255,255,255,0,5);
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 20px;
+	display: none;
+}
+
+#offerForm .form-check {
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.btn-group {
+	margin-bottom: 16px;
+	padding: 0;
+}
+
+.formTitle {
+	display: inline-flex;
+}
+
+#offerForm span {
+	margin-right: 12px;
+}
+
+#phoneInput {
+	background: none;
+	margin: 0;
+	padding: 8px;
+}
+
+.alert {
+	display: none;
 }
 
 /* Additional effects */
