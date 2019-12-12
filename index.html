@@ -239,8 +239,14 @@
 			</div>
 		</div>
 	</div>
+	<div class="alert alert-info" role="alert" id="alert">
+		<strong id="alertText">Спасибо за Ваш заказ. Мы перезвоним Вам в ближайшее время.</strong>
+		<button type="button" class="close" id="closeAlert" data-hide="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+	</div>
 	<div class="flex" id="offerForm">
-		<h1 id="goto4">Заказ сервера</h1>
+		<h1 id="goto5">Заказ сервера</h1>
 		<div class="input-group mb-3" id="plan">
 			<div class="input-group-prepend">
 				<label class="input-group-text" for="inputGroupSelect01">Тариф</label>
@@ -264,30 +270,27 @@
 					<option value="12">12 месяцев</option>
 			</select>
 		</div>
-		<form class="form-inline" id="phoneInput">
-			<div class="form-group">
-				<input type="tel" id="inputPhone" class="form-control mx-sm-3" aria-describedby="phoneInline">
-				<small id="phoneInline" class="text-muted">
-					Номер телефона
-				</small>
-			</div>
-		</form>
+		<div class="input-group mb-3" id="phoneInput">
+				<div class="input-group-prepend">
+					<label class="input-group-text" for="phoneInput">Способ связи</label>
+				</div>
+				<select class="custom-select" id="phoneMailSelector">
+					<option selected><Выберите...></option>
+					<option value="phone">Номер телефона</option>
+					<option value="email">E-mail адрес</option>
+				</select>
+				<input type="text" class="form-control" id="inputPhone" placeholder="">
+			  </div>
 		<h3 class="pricement">Итог: <span>0</span></h3>
 		<div class="btn-group" role="group">
-				<button class="btn btn-secondary" type="button" id="paymentConfirmation">Подтвердить</button>
-				<button class="btn btn-danger" type="button" id="paymentCancel">Отменить</button>
+			<button class="btn btn-secondary" type="button" id="paymentConfirmation">Подтвердить</button>
+			<button class="btn btn-danger" type="button" id="paymentCancel">Закрыть</button>
 		</div>
-	</div>
-	<div class="alert alert-info alert-dissmissible fade show" role="alert">
-		<strong>Спасибо за Ваш заказ. Мы перезвоним Вам в ближайшее время.</strong>
-		<button type="button" class="close" id="closeAlert" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
 	</div>
 	<div class="flex" id="section3">
 		<h1 id="goto4">Свяжитесь с нами для заказа</h1>
 		<p>и получите -50% на настройку сервера при оформлении годового контракта</p>
-		<input type="text" class="form-control" placeholder="Ваш E-mail или номер телефона" aria-label="Recipient's username">
+		<input type="text" class="form-control" placeholder="example@example.com" aria-label="Recipient's username">
 		<button class="btn btn-outline-secondary" type="button" id="button-addon2">Получить скидку!</button>
 	</div>
 	<footer>
@@ -310,5 +313,6 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/jquery.maskedinput.js"></script>
 <script src="js/jQuery_formcaller.js"></script>
 </html>

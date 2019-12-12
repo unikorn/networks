@@ -167,15 +167,6 @@ form {
 	body{
 		padding: 0 calc(50%-992px);
 	}
-	#offerForm {
-		width: 45vw;
-	}
-	#offerForm .input-group {
-		width: 40vw;
-	}
-	#phoneInput {
-		width: 40vw;
-	}
 }
 
 @media (min-width: 760px) {
@@ -190,15 +181,6 @@ form {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-	#offerForm {
-		width: 50vw;
-	}
-	#offerForm .input-group {
-		width: 45vw;
-	}
-	#phoneInput {
-		width: 45vw;
-	}
 }
 
 @media (min-width: 576px){
@@ -212,15 +194,6 @@ form {
 		font-size: 24px;
 		margin-left: 25px;
 		margin-right: 25px;
-	}
-	#offerForm {
-		width: 75vw;
-	}
-	#offerForm .input-group {
-		width: 70vw;
-	}
-	#phoneInput {
-		width: 70vw;
 	}
 }
 
@@ -238,15 +211,6 @@ form {
 		font-size: 22px;
 		margin-left: 35px;
 		margin-right: 35px;
-	}
-	#offerForm {
-		width: 95vw;
-	}
-	#offerForm .input-group {
-		width: 90vw;
-	}
-	#phoneInput {
-		width: 90vw;
 	}
 } 
 
@@ -342,6 +306,22 @@ footer a:hover {
 }
 
 /* Offer form settings */
+		
+#offerForm {
+	width: 50vw;
+}
+
+#plan {
+	width: 35vw;
+}
+
+#time {
+	width: 35vw;
+}
+
+#phoneInput {
+	width: 35vw;
+}
 
 #section2 {
 	margin-bottom: 50px;
@@ -379,7 +359,7 @@ footer a:hover {
 }
 
 .btn-group {
-	margin-bottom: 16px;
+	margin-bottom: 35px;
 	padding: 0;
 }
 
