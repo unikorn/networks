@@ -2,7 +2,6 @@
 Made by Alex Komlev & Aqualabs, 2019.
 This document is sharing under the MIT License. */
 
-
 jQuery(document).ready(function($) {
 
     /* Offer Form Calculation */
@@ -48,6 +47,9 @@ jQuery(document).ready(function($) {
     $('#inputPhone').change(function() {
         var phoneValue = $('#inputPhone').val();
         console.log(phoneValue);
+        if ($('#inputPhone').val() == 0) {
+            $('#alertText').text = ("Вы ввели неверные данные.");
+        }
     })
     $('#phoneMailSelector option').on('click', function() {
         var choice = $('#phoneMailSelector option:selected').val();
@@ -62,32 +64,3 @@ jQuery(document).ready(function($) {
         })
     })
 });
-
-/* Window Resizer same as @media rules */
-
-$(window).resize(function () {
-    if ($(window).width() < 576 ) {
-        $('#offerForm').css("width", "100vw");
-        $('#plan').css("width", "85vw");
-        $('#time').css("width", "85vw");
-        $('#phoneInput').css("width", "85vw");
-    }
-    else if ($(window).width() < 768 ) {
-        $('#offerForm').css("width", "90vw");
-        $('#plan').css("width", "80vw");
-        $('#time').css("width", "80vw");
-        $('#phoneInput').css("width", "80vw");
-    }
-    else if ($(window).width() < 992 ) {
-        $('#offerForm').css("width", "75vw");
-        $('#plan').css("width", "60vw");
-        $('#time').css("width", "60vw");
-        $('#phoneInput').css("width", "60vw");
-    }
-    else {
-        $('#offerForm').css("width", "50vw");
-        $('#plan').css("width", "40vw");
-        $('#time').css("width", "40vw");
-        $('#phoneInput').css("width", "40vw");
-    }
-})
