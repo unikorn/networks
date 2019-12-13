@@ -26,15 +26,27 @@ jQuery(document).ready(function($) {
     $('.close').on('click', function(){
         $('#offerForm').hide();
         $('#offerForm').css("display", "none");
+        $('.flex').css("filter", "none");
+        $('.flex').css("-webkit-filter", "none)");
+        $('.navbar').css("filter", "none");
+        $('.navbar').css("-webkit-filter", "none");
     })
     $('#paymentConfirmation').on('click', function(){
         $('#offerForm').hide();
         $('#offerForm').css("display", "none");
         $('.alert').show();
+        $('.flex').css("filter", "none");
+        $('.flex').css("-webkit-filter", "none)");
+        $('.navbar').css("filter", "none");
+        $('.navbar').css("-webkit-filter", "none");
     })
     $('#paymentCancel').on('click', function(){
         $('#offerForm').hide();
         $('#offerForm').css("display", "none");
+        $('.flex').css("filter", "none");
+        $('.flex').css("-webkit-filter", "none)");
+        $('.navbar').css("filter", "none");
+        $('.navbar').css("-webkit-filter", "none");
     })
 
     /* Repeatable Alert */
@@ -44,23 +56,10 @@ jQuery(document).ready(function($) {
             $("." + $(this).attr('data-hide')).hide();
         })
     })
-    $('#inputPhone').change(function() {
-        var phoneValue = $('#inputPhone').val();
-        console.log(phoneValue);
-        if ($('#inputPhone').val() == 0) {
-            $('#alertText').text = ("Вы ввели неверные данные.");
-        }
-    })
-    $('#phoneMailSelector option').on('click', function() {
-        var choice = $('#phoneMailSelector option:selected').val();
-        console.log(choice);
-        $('#phoneMailSelector').each(function () {
-            if (choice == 'phone') {
-                $('#inputPhone').attr("placeholder", "+380(12)-345-67-89");
-            }
-            else if (choice == 'email') {
-                $('#inputPhone').attr("placeholder", "example@example.com");
-            }
-        })
-    })
+    $('.ofb').on('click', function() {
+        $('.flex').css("filter", "blur(7px)");
+        $('.flex').css("-webkit-filter", "blur(7px)");
+        $('.navbar').css("filter", "blur(7px)");
+        $('.navbar').css("-webkit-filter", "blur(7px)");
+    });
 });

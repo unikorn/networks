@@ -48,10 +48,10 @@
 		<p>Networks.ua предоставляет аренду выделенных серверов в Германии</p>
 		<a href="#goto2"><i class="fa fa-chevron-circle-down fa-3x" id="goToi2" aria-hidden="true"></i></a>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper d-lg-block d-none">
 		<img class="parallax-img">
 	</div>
-	<div class="wrapper"></div>
+	<div class="wrapper d-lg-block d-none"></div>
 	<div class="flex" id="section1">
 		<h1 id="goto2">Наши преимущества</h1>
 		<div class="d-none d-lg-block">
@@ -140,7 +140,7 @@
 						<div class="card-body">
 							<h6>До 10 пользователей</h6>
 							<h3>100€/месяц</h3>
-							<button class="btn btn-primary ofb" data-price="100">Заказать</button>
+							<button class="btn btn-primary ofb" type="button" data-toggle=modal" data-target="#offerForm" data-price="100">Заказать</button>
 						</div>
 					</div>
 				</div>
@@ -158,7 +158,7 @@
 						<div class="card-body">
 							<h6>До 20 пользователей</h6>
 							<h3>200€/месяц</h3>
-							<button class="btn btn-primary ofb" data-price="200">Заказать</button>
+							<button class="btn btn-primary ofb" type="button" data-toggle=modal" data-target="#offerForm" data-price="200">Заказать</button>
 						</div>
 					</div>
 				</div>
@@ -176,7 +176,7 @@
 						<div class="card-body">
 							<h6>До 30 пользователей</h6>
 							<h3>300€/месяц</h3>
-							<button class="btn btn-primary ofb" data-price="300">Заказать</button>
+							<button class="btn btn-primary ofb" type="button" data-toggle=modal" data-target="#offerForm" data-price="300">Заказать</button>
 						</div>
 					</div>
 				</div>
@@ -199,7 +199,7 @@
 						<div class="card-body">
 							<h6>До 10 пользователей</h6>
 							<h3>100€/месяц</h3>
-							<button class="btn btn-primary ofb" data-price="100">Заказать</button>
+							<button class="btn btn-primary ofb" type="button" data-toggle="modal" data-target="#offerForm" data-price="100">Заказать</button>
 						</div>
 					</div>
 				</div>
@@ -219,7 +219,7 @@
 						<div class="card-body">
 							<h6>До 20 пользователей</h6>
 							<h3>200€/месяц</h3>
-							<button class="btn btn-primary ofb" data-price="200">Заказать</button>
+							<button class="btn btn-primary ofb" type="button" data-toggle=modal" data-target="#offerForm" data-price="200">Заказать</button>
 						</div>
 					</div>
 				</div>
@@ -239,7 +239,7 @@
 						<div class="card-body">
 							<h6>До 30 пользователей</h6>
 							<h3>300€/месяц</h3>
-							<button class="btn btn-primary ofb" data-price="300">Заказать</button>
+							<button class="btn btn-primary ofb" type="button" data-toggle=modal" data-target="#offerForm" data-price="300">Заказать</button>
 						</div>
 					</div>
 				</div>
@@ -248,50 +248,59 @@
 		</div>
 	</div>
 	<div class="alert alert-info" role="alert" id="alert">
-		<div id="alertText">Спасибо за Ваш заказ. Мы перезвоним Вам в ближайшее время.</div>
+		<div id="alertText">Спасибо за Ваш заказ. Мы свяжемся с вами в ближайшее время.</div>
 		<button type="button" class="close" id="closeAlert" data-hide="alert" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		</button>
 	</div>
-	<div class="flex" id="offerForm">
-		<h1 id="goto5">Заказ сервера</h1>
-		<div class="input-group mb-3" id="plan">
-			<div class="input-group-prepend">
-				<label class="input-group-text" for="inputGroupSelect01">Тариф</label>
+	<div class="modal" tabindex="-1" id="offerForm" role="dialog">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">Заказ сервера</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
 			</div>
-			<select class="custom-select" id="inputGroupSelect01">
-				<option selected><Выберите...></option>
-				<option value="OFFICE 5" data-price="100">OFFICE 5</option>
-				<option value="OFFICE 10" data-price="200">OFFICE 10</option>
-				<option value="OFFICE 20" data-price="300">OFFICE 20</option>
-			</select>
-		</div>
-		<div class="input-group mb-3" id="time">
-			<div class="input-group-prepend">
-				<label class="input-group-text" for="inputGroupSelect02">Срок</label>
+			<div class="modal-body">
+				<div class="input-group mb-3" id="plan">
+					<div class="input-group-prepend">
+						<label class="input-group-text" for="inputGroupSelect01">Тариф</label>
+					</div>
+					<select class="custom-select" id="inputGroupSelect01">
+						<option selected><Выберите...></option>
+						<option value="OFFICE 5" data-price="100">OFFICE 5</option>
+						<option value="OFFICE 10" data-price="200">OFFICE 10</option>
+						<option value="OFFICE 20" data-price="300">OFFICE 20</option>
+					</select>
+				</div>
+				<div class="input-group mb-3" id="time">
+					<div class="input-group-prepend">
+						<label class="input-group-text" for="inputGroupSelect02">Период</label>
+					</div>
+					<select class="custom-select" id="inputGroupSelect02">
+						<option selected><Выберите...></option>
+							<option value="1">1 месяц</option>
+							<option value="3">3 месяца</option>
+							<option value="6">6 месяцев</option>
+							<option value="12">12 месяцев</option>
+					</select>
+				</div>
+				<div class="input-group mb-3" id="phoneInput">
+					<div class="input-group-prepend">
+						<label class="input-group-text" for="inputPhone">E-mail или номер телефона</label>
+					</div>
+						<input type="text" class="form-control" id="inputPhone" placeholder="">
+					  </div>
+				<h3 class="pricement">Итог: <span>0</span></h3>
 			</div>
-			<select class="custom-select" id="inputGroupSelect02">
-				<option selected><Выберите...></option>
-					<option value="1">1 месяц</option>
-					<option value="3">3 месяца</option>
-					<option value="6">6 месяцев</option>
-					<option value="12">12 месяцев</option>
-			</select>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" id="paymentCancel" data-dismiss="modal">Закрыть</button>
+			  <button type="button" class="btn btn-primary" id="paymentConfirmation">Подтвердить</button>
+			</div>
+		  </div>
 		</div>
-		<div class="input-group mb-3" id="phoneInput">
-				<select class="custom-select" id="phoneMailSelector">
-					<option selected><Выберите...></option>
-					<option value="phone">Номер телефона</option>
-					<option value="email">E-mail адрес</option>
-				</select>
-				<input type="text" class="form-control" id="inputPhone" placeholder="">
-			  </div>
-		<h3 class="pricement">Итог: <span>0</span></h3>
-		<div class="btn-group" role="group">
-			<button class="btn btn-secondary" type="button" id="paymentConfirmation">Подтвердить</button>
-			<button class="btn btn-danger" type="button" id="paymentCancel">Закрыть</button>
-		</div>
-	</div>
+	  </div>
 	<div class="flex" id="section3">
 		<h1 id="goto4">Специальное предложение</h1>
 		<p>Оставьте свои контакты и получите -50% на настройку сервера при оформлении годового контракта</p>

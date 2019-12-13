@@ -10,12 +10,6 @@ Full redesign and style.css written from scratch.
 
 Changelog:
 
-v4.4 & v4.5 "Arrow"
-- Order form is now completed
-- Added "AniMedia.js" with functionality of @media in CSS, but working better
-- Fresh icons and smooth scrolling
-- Adapted for mobile devices
-
 v4.3 "Query"
 - Added form for offer confirmation
 - Few styles changed
