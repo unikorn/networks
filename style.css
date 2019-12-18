@@ -337,6 +337,12 @@ footer a:hover {
 	top: 20%;
 }
 
+#specialForm {
+	transform: translateX(-50%);
+	left: 50%;
+	top: 20%;
+}
+
 #section2 {
 	margin-bottom: 50px;
 }
@@ -349,6 +355,10 @@ footer a:hover {
 
 .alert {
 	display: none;
+}
+
+.modal-body p {
+	font-size: 16px;
 }
 
 

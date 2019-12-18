@@ -4,6 +4,17 @@ This document is sharing under the MIT License. */
 
 jQuery(document).ready(function($) {
 
+    var specmail = $('#specialEmail').val();
+    var simplePhone = $('#inputPhone').val();
+
+    $('#specialEmail').on('change', function () {
+        specmail = $('#specialEmail').val();
+        console.log(specmail);
+    })
+
+    var price = $('#inputGroupSelect01 option:selected').data('price');
+    var period = $('#inputGroupSelect02 option:selected').val();
+
     /* Offer Form Calculation */
 
     $('.btn.ofb').on('click', function(){
@@ -14,18 +25,18 @@ jQuery(document).ready(function($) {
         })
         $('#offerForm').show();
         $('#offerForm').css("display", "flex");
-        var price = $('#inputGroupSelect01 option:selected').data('price');
-        var period = $('#inputGroupSelect02 option:selected').val();
         $('.pricement span').text(+price * period+'€');
         $('#inputGroupSelect02 option, #inputGroupSelect01 option').on('click', function(){
             var price = $('#inputGroupSelect01 option:selected').data('price');
             var period = $('#inputGroupSelect02 option:selected').val();
-            $('.pricement span').text(+price * period+'€');
+            $('.pricement span').text(+(price * period)+'€');
         })
     })
     $('.close').on('click', function(){
         $('#offerForm').hide();
         $('#offerForm').css("display", "none");
+        $('#specialForm').hide();
+        $('#specialForm').css("display", "none");
         $('.flex').css("filter", "none");
         $('.flex').css("-webkit-filter", "none)");
         $('.navbar').css("filter", "none");
@@ -39,6 +50,21 @@ jQuery(document).ready(function($) {
         $('.flex').css("-webkit-filter", "none)");
         $('.navbar').css("filter", "none");
         $('.navbar').css("-webkit-filter", "none");
+
+        var trf=$('#inputGroupSelect01 option:selected').val();
+        var period=$('#inputGroupSelect02 option:selected').val();
+        var inputPhone=$('#inputPhone').val();
+        var specialEmail=$('#specialEmail').val();
+
+        sendout(trf,period,inputPhone,specialEmail);
+
+        function sendout(trf, period, inputPhone, specialEmail) {
+            var z=$.ajax({
+                type: "POST",
+                url: "handler.php/",
+                data: {trf:trf, period:period, inputPhone:inputPhone, specialEmail:specialEmail},
+            });
+        };
     })
     $('#paymentCancel').on('click', function(){
         $('#offerForm').hide();
@@ -61,5 +87,23 @@ jQuery(document).ready(function($) {
         $('.flex').css("-webkit-filter", "blur(7px)");
         $('.navbar').css("filter", "blur(7px)");
         $('.navbar').css("-webkit-filter", "blur(7px)");
+    });
+    $('#button-addon2').on('click', function() {
+        $('#specialForm').show();
+        $('#specialForm').css("display", "flex");
+        var trf=$('#inputGroupSelect01 option:selected').val();
+        var period=$('#inputGroupSelect02 option:selected').val();
+        var inputPhone=$('#inputPhone').val();
+        var specialEmail=$('#specialEmail').val();
+
+        sendout(trf,period,inputPhone,specialEmail);
+
+        function sendout(trf, period, specialEmail) {
+            var z=$.ajax({
+                type: "POST",
+                url: "handler.php/",
+                data: {trf:trf, period:period, inputPhone:inputPhone, specialEmail:specialEmail},
+            });
+        };
     });
 });
