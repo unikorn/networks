@@ -11,10 +11,13 @@
 	<link rel="stylesheet" type="text/css" href="style.css" charset="UTF-8" />
 </head>
 <body>
-	<nav class="navbar fixed-top navbar-light">
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
 		<a href="#"><img class="navbar-brand" src="img/Networks_logo.png" height="45px"></a>
-		<div class="d-none d-lg-block">
-			<ul class="navbar-nav">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
 					<a class="nav-link" href="#">Главная</a>
 				</li>
@@ -29,29 +32,12 @@
 				</li>
 			</ul>
 		</div>
-		<div class="d-lg-none d-md-block">
-			<div class="btn-group dropleft">
-				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-hidden="true">
-					Меню
-				</button>
-				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="#">Главная</a>
-					<a class="dropdown-item" href="#goto2">Преимущества</a>
-					<a class="dropdown-item" href="#goto3">Тарифы</a>
-					<a class="dropdown-item" href="#goto4">Контакты</a>
-				</div>
-			</div>
-		</div>
 	</nav>
 	<div class="flex" id="section0">
-		<h1>Обеспечьте защиту своим данным</h1>
-		<p>Networks.ua предоставляет аренду выделенных серверов в Германии</p>
+		<h1 class="s0h1">Обеспечьте защиту своим данным</h1>
+		<p class="s0p">Networks.ua предоставляет аренду выделенных серверов в Германии</p>
 		<a href="#goto2"><i class="fa fa-chevron-circle-down fa-3x" id="goToi2" aria-hidden="true"></i></a>
 	</div>
-	<div class="wrapper d-lg-block d-none">
-		<img class="parallax-img">
-	</div>
-	<div class="wrapper d-lg-block d-none"></div>
 	<div class="flex" id="section1">
 		<h1 id="goto2">Наши преимущества</h1>
 		<div class="d-none d-lg-block">
@@ -292,8 +278,8 @@
 					</div>
 						<input type="text" class="form-control" id="inputPhone" placeholder="">
 					  </div>
-				<h3 class="pricement">Итог: <span>0</span></h3>
-				</div>
+					  <h3 class="pricement">Итог: 0€</h3>
+					</div>
 			<div class="modal-footer">
 			  <button type="button" class="btn btn-secondary" id="paymentCancel" data-dismiss="modal">Закрыть</button>
 			  <button type="button" class="btn btn-primary" id="paymentConfirmation">Подтвердить</button>
@@ -335,8 +321,14 @@
 	</footer>
 </body>
 <style>
-	body {
-		background-image: url("img/background.png");
+	#section0 {
+		height: 100vh;
+		width: 100vw;
+		background-image: url("img/section0_background.jpg");
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 </style>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

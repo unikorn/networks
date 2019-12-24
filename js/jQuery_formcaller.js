@@ -18,19 +18,28 @@ jQuery(document).ready(function($) {
     /* Offer Form Calculation */
 
     $('.btn.ofb').on('click', function(){
-        var tarif = $(this).parent().parent().find('.nameTarif').text();
+        var tarif = $('.btn.ofb').parent().parent().find('.nameTarif').text();
         $('#inputGroupSelect01 option').each(function(){
-            if($(this).val() == tarif)
+            if($('#inputGroupSelect01 option:selected').val() == tarif) {
                 $(this).prop('selected', true);
+            }
         })
         $('#offerForm').show();
         $('#offerForm').css("display", "flex");
-        $('.pricement span').text(+price * period+'€');
-        $('#inputGroupSelect02 option, #inputGroupSelect01 option').on('click', function(){
-            var price = $('#inputGroupSelect01 option:selected').data('price');
-            var period = $('#inputGroupSelect02 option:selected').val();
-            $('.pricement span').text(+(price * period)+'€');
-        })
+        if ($(window).width() < 768 ) {
+            $('#inputGroupSelect02, #inputGroupSelect01').on('change', function(){
+                var price = $('#inputGroupSelect01 option:selected').data('price');
+                var period = $('#inputGroupSelect02 option:selected').val();
+                $('.pricement').text('Итог: '+price * period+'€');
+            })
+        }
+        else {
+            $('#inputGroupSelect02, #inputGroupSelect01').on('click', function(){
+                var price = $('#inputGroupSelect01 option:selected').data('price');
+                var period = $('#inputGroupSelect02 option:selected').val();
+                $('.pricement').text('Итог: '+price * period+'€');
+            })
+        }
     })
     $('.close').on('click', function(){
         $('#offerForm').hide();
